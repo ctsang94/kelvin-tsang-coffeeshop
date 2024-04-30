@@ -1,0 +1,66 @@
+nav ul {
+  list-style-type: none;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+header {
+  background-color: #fff0ed;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3,
+nav h3,
+footer h3 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.button {
+  background-color: #5bacc3;
+  color: white;
+}
+
+.nitro {
+  background-color: #fff0ed;
+}
+
+article div img {
+  height: 280px;
+}
+
+div p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5bacc3;
+}
+
+.discount-banner {
+  width: 90%;
+  background-color: #393939;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+span.promo-code {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #fff0ed;
+}
+
+span.days {
+  font-weight: bold;
+}
+
+.icons {
+  width: 50px;
+}
