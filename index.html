@@ -20,9 +20,9 @@
         <img class="header__icon" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"/>
         <h2 class="header__title">nitro</h2>
         <ul class="header__list">
-          <li class="header__items"><a href="index.html">ABOUT</a></li>
-          <li class="header__items"><a href="./pages/menu.html">MENU</a></li>
-          <li class="header__items"><a href="./pages/menu.html" class="header__items--nitrobluefont">SHOP NOW</a></li>
+          <li class="header__items"><a class="header__link" href="index.html">ABOUT</a></li>
+          <li class="header__items"><a class="header__link" href="./pages/menu.html">MENU</a></li>
+          <li class="header__items"><a class="header__items--nitrobluefont" href="./pages/menu.html" >SHOP NOW</a></li>
         </ul>
       </nav>
     </header>
@@ -42,22 +42,41 @@
       <article class="section2">
         <h2 class="section2__title">Our Products</h2>
 
-        <div class="card2__container"></div>
-        <div class="card2">
-          <img class="card2__img" src="./assets/coffeebeans-hero.png" alt="coffee beans" />
-          <h3 class="card2__title">Coffee Beans</h3>
-          <p class="card2__price">$18.99</p>
-        </div>
-        <div class="card2">
-          <img class="card2__img" src="/assets/coldbrew.png" alt="cold brew" />
-          <h3 class="card2__title">Cold Brew</h3>
-          <p class="card2__price">$4.99</p>
-        </div>
-        <div class="card2">
-          <img class="card2__img" src="./assets/inhousebrew.png" alt="In-house brew" />
-          <h3 class="card2__title">In-house Brew</h3>
-          <p class="card2__price" >$2.99</p>
-        </div>
+        <div class="card2__container">
+          <div class="card2">
+            <img class="card2__img" src="./assets/coffeebeans-hero.png" alt="coffee beans" />
+            <div class="card2__bottom">
+              <div class="card2__doubletext">
+                <h3 class="card2__title">Coffee Beans</h3>
+                <p class="card2__text">Pack of 3</p>
+              </div>
+              <p class="card2__price">$18.99</p>
+
+            </div>
+          </div>
+
+          <div class="card2">
+            <img class="card2__img" src="/assets/coldbrew.png" alt="cold brew" />
+            <div class="card2__bottom">
+              <div class="card2__doubletext">
+              <h3 class="card2__title">Cold Brew</h3>
+              <p class="card2__text">1 can</p>
+              </div>
+              <p class="card2__price">$4.99</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <img class="card2__img" src="./assets/inhousebrew.png" alt="In-house brew" />
+            <div class="card2__bottom">
+              <div class="card2__doubletext">
+              <h3 class="card2__title">In-house Brew</h3>
+              <p class="card2__text">1 cup</p>
+            </div>
+              <p class="card2__price" >$2.99</p>
+
+            </div>
+          </div>
         </div>
 
         <a class="card2__btn" href="./pages/menu.html"><button type="button" class="btn card2__btn">VIEW ALL</button></a>

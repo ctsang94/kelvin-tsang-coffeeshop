@@ -14,6 +14,7 @@ a {
     text-decoration: none;
 }
 
+
 /* NAV BAR SECTION */
 .header__navbar{
     width:100%;
@@ -37,6 +38,7 @@ a {
     margin-bottom: 20px;
     padding: 50px;
     padding-left: 10px;
+
 }
 
 .header__items{
@@ -44,6 +46,11 @@ a {
     vertical-align: middle;
     padding: 20px;
     text-align: left;
+    text-decoration: none;
+}
+
+.header__link{
+    color:black;
 }
 
 .header__items--nitrobluefont{
@@ -93,6 +100,7 @@ a {
     padding:20px;
     margin: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .section2__title{
@@ -100,17 +108,15 @@ a {
 }
 
 .card2__container{
-    justify-content: center;
-    padding:20px;
-    margin: 10px;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .card2{
     width:320px;
     height: 440px;
-    padding:20px;
-    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -122,8 +128,39 @@ a {
     height:280px;
 }
 
+.card2__bottom{
+    background-color: #FFF0ED;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    height:36%;
+    border-radius: 10px;
+}
+
+.card2__doubletext{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+
+}
+
+.card2__title{
+    margin: 0;
+}
+
 .card2__price{
     color: #5BACC3;
+}
+
+.card2__text{
+    margin: 0;
+    padding: 0;
 }
 
 .card2__btn{
