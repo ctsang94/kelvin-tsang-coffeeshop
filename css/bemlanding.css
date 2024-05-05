@@ -14,31 +14,37 @@ a {
     text-decoration: none;
 }
 
+ol,ul { list-style: none;}
+html, body{
+    margin:0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
 
 /* NAV BAR SECTION */
 .header__navbar{
     width:100%;
-    display: inline;
-    display: inline-flex;
-    vertical-align: text-bottom;
-    text-align: left;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:baseline;
     background-color: #FFF0ED;
 }
 
 .header__title{
-    padding: 5px;
-    vertical-align: text-bottom;
-
+    font-size:60px;
+    font-weight: 300;
+    margin: 0;
 }
 
 .header__list{
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    padding: 50px;
-    padding-left: 10px;
-
+    padding: 0px;
+    margin: 0px;
 }
 
 .header__items{
@@ -58,48 +64,64 @@ a {
 }
 
 /* FIRST SECTION */
-.section{
+.hero{
     display:flex;
+    justify-content: space-between;
     background-color: #FFF0ED;
     width: 100%;
-    height: 90vh;
-    vertical-align: middle;
+    height: 100%;
 
 }
 
 .card{
-    width: 50%;
-    text-align: left;
-    padding-top:20%;
-    margin-left: auto;
-    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30%;
+}
+.card__description{
+    text-wrap: wrap;
 }
 
 .btn{
-    width:180px;
+    position: relative;
+    width: 12.25rem;
+    height: 4rem;
     padding: 20px;
     margin:20px;
     background-color: #5BACC3;
     color: white;
     border: 0;
+    z-index: 1;
 }
 
-.section__img{
-    display: block;
-    float: right;
-    height:90%;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+.btn__outline{
+    position: absolute;
+    border: 2px solid black;
+    width: 12rem;
+    height: 4rem;
+    z-index: 2;
+    bottom: .25rem;
+    right: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.btn__text{
+    text-align: center;
+    box-sizing: border-box;
+    text-align:justify;
+    color: white;
+    position: relative;
+}
 
 /* SECOND SECTION */
-
 .section2{
-    padding:20px;
-    margin: 20px;
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
     width: 100%;
 }
 
@@ -112,32 +134,36 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .card2{
     width:320px;
     height: 440px;
-    border-radius: 10px;
+    border-radius: .625rem;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    display: inline-block;
-    justify-content: space-evenly;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card2__img{
     height:280px;
+    padding: 20px;
+    display: block;
+    margin: auto;
 }
 
+
 .card2__bottom{
+    height: 100%;
     background-color: #FFF0ED;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-    height:36%;
-    border-radius: 10px;
+
 }
 
 .card2__doubletext{
@@ -147,35 +173,56 @@ a {
     align-items: flex-start;
     padding: 0;
     margin: 0;
-
 }
 
 .card2__title{
     margin: 0;
+    padding: 0;
+}
+
+.card2__text{
+    margin: 0;
+    padding: 0;
+    color: gray;
 }
 
 .card2__price{
     color: #5BACC3;
 }
 
-.card2__text{
-    margin: 0;
-    padding: 0;
-}
-
 .card2__btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
 
+/* Section3 */
+.section3{
+    display: flex;
+    justify-content: center;
+}
+
+.section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section-left__icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
+
+}
+
+.section-left__icon{
+    width: 3.125rem;
+}
 
 /* Discount Banner */
 .discount__banner{
-    width:100%;
-    padding:20px;
-    margin:20px;
-
+    width:90%;
+    display: flex;
+    justify-content: center;
     background-color:#393939;
     color: white;
     text-align: center;
@@ -192,22 +239,22 @@ a {
 
 /* Footer Nav */
 .footer__navbar{
-    width:100%;
+
     background-color: #FFF0ED;
-    vertical-align: auto;
     text-align: center;
-    display: inline-flex;
     vertical-align: auto;
-    display:inline-block;
+    display: flex;
     justify-content: space-evenly;
-    Padding: 20px;
+    width:100%;
+    height:100%;
     margin: 20px;
 
 }
 
+
 .card3{
-    height:100px;
-    display:inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: left;
     padding:20px;

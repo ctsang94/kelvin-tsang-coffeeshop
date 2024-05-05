@@ -6,76 +6,52 @@
   background-size: cover;
 }
 
-h1,
-h2 {
-  font-size: 60px;
-  font-weight: 300;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav ul {
-  list-style-type: none;
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #FFF0ED;
 }
 
-.title-box {
-  width: 300px;
-  height: 200px;
-  background-color: #393939;
+.nav__left{
+  display: flex;
+  align-items: center;
 }
 
-.menu {
-  width: 100%;
-  color: white;
-  text-align: center;
+.nav__list{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 2rem;
 }
 
-.ul-no-margin {
-  padding-left: 0;
+.nav__item{
+  text-transform: uppercase;
 }
 
-li.menu {
-  text-align: center;
-  list-style-type: none;
-  background-color: #393939;
-  color: #fff;
+.nav__link{
+  text-decoration: none;
 }
 
-article.hotdrinks {
-  background-color: #fff0ed;
+.nav__link--nitro{
+  text-decoration: none;
+  color:#5BACC3;
 }
 
-article.colddrinks {
-  background-color: #f7f7f7;
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-article.pastries {
-  background-color: #fff0ed;
-}
+.title-box{
 
-article > h2 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 300;
-}
-
-article > h3 {
-  text-align: center;
-  font-size: 33px;
-  font-weight: 400;
-}
-
-article ul {
-  list-style-type: none;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-article ul li:first-child {
-  text-align: center;
-  font-style: italic;
-}
-
-p.price {
-  color: #5bacc3;
-  text-align: center;
-  font-style: normal;
 }
