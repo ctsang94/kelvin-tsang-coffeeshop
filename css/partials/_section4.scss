@@ -1,0 +1,19 @@
+/* Discount Banner */
+
+.discount__banner{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    background-color:#393939;
+    color: white;
+    text-align: center;
+}
+
+.discount__text{
+    font-size:45px;
+    font-weight: 400;
+}
+
+.discount__text--bold{
+    font-weight: 700;
+}
